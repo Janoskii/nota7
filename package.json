@@ -23,7 +23,7 @@
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
     "@awesome-cordova-plugins/camera": "^5.46.0",
-    "@awesome-cordova-plugins/core": "^6.2.0",
+    "@awesome-cordova-plugins/core": "^5.46.0",
     "@awesome-cordova-plugins/native-storage": "^6.2.0",
     "@awesome-cordova-plugins/social-sharing": "^6.0.0",
     "@awesome-cordova-plugins/sqlite": "^6.0.0",
