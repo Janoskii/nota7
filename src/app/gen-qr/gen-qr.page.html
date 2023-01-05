@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-toolbar color="warning">
+
+    <ion-title> Generar QR </ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>  
+    </ion-buttons> 
+      <ion-buttons slot="end">
+        <ion-menu-button autoHide="false"></ion-menu-button>
+      </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content [style.visibility]="content_visibility"> <!-- GENERAR QR -->
+  <ion-card class="ion-text-center">
+    <ion-card-content>
+      <qrcode 
+        [qrdata]="qrCodeString" 
+        [width]="230"
+        [errorCorrectionLevel]="'M'">
+      </qrcode>
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+</ion-content>

@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">  
+  <ion-toolbar color="warning">
+
+    <ion-title style="text-align:center">INICIAR SESION</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo">
+
+
+
+
+
+  <img src="assets\logonew.png"  alt=" ">
+
+  
+    <ion-card-subtitle class="dark" style="text-align: center;">USUARIO</ion-card-subtitle>
+    <ion-card>
+      <form [formGroup]="loginForm">
+      <ion-item class="texto">
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input id="inputUsuario" type="text" formControlName="user" [(ngModel)]="user"></ion-input>
+        </ion-item>
+      <ion-item class="texto">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input id="inputPassword" type="password" formControlName="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      
+      </form>
+      
+      <ion-row>
+        <ion-col>
+          <div _ngcontent-dgu-c144=""><ion-button _ngcontent-dgu-c144="" id="botonIngreso"
+             _ngcontent-ehp-c144="" color="dark" ng-reflect-color="dark" tabindex="0"
+            class="iniciarsess ion-color ion-color-dark md button button-solid ion-activatable ion-focusable hydrated"
+              style="margin-left: 40px;"> Iniciar Sesion </ion-button></div>
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+
+      </ion-row>
+
+      
+
+    </ion-card>
+
+
+
+  <ion-grid >
+   
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <a><p style="text-align:center ;"><a href="./../olvidecontra" style="color :orange"> OLVIDE MI CONTRASEÑA</a></p></a>
+          <p style="text-align:center ;"><a href="./../registrar"  class="regis" style="color: orange"> Registrar</a></p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  
+
+    <ion-content>

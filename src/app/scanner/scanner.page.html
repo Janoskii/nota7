@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-toolbar color="warning">
+
+    <ion-title> SCANNER</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>  
+    </ion-buttons> 
+      <ion-buttons slot="end">
+        <ion-menu-button autoHide="false"></ion-menu-button>
+      </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+
+ 
+
+  <ion-button color="warning" _ngcontent-dsu-c154=""
+  expand="block"
+  class="ion-margin"
+  (click)="startScan()" id="startScan" style="margin-top: 350px;" >
+  ¡¡Ponte Presente!!
+  </ion-button>
+
+  <ion-item *ngIf="scannedResult">
+    <ion-label class="ion-text-wrap">Resultado Escaneado: {{scannedResult}}</ion-label>
+  </ion-item> 
+
+
+</ion-content>

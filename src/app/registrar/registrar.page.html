@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>  
+    </ion-buttons> 
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content [fullscreen]="true" class="fondo">
+  <form [formGroup]="formudatos" (ngSubmit)="submitForm()" novalidate >
+    <ion-item class="texto" lines="full">
+      <ion-label position="floating">Nombre y Apellido</ion-label>
+      <ion-input formControlName="nombre" type="text" required></ion-input>
+    </ion-item>
+    <ion-item class="texto" lines="full">
+      <ion-label position="floating">contraseña</ion-label>
+      <ion-input formControlName="pass" type="password" required></ion-input>
+    </ion-item>
+    <ion-item class="texto" lines="full">
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input formControlName="email" type="email" required></ion-input>
+    </ion-item>
+    <ion-item class="texto" lines="full">
+      <ion-label position="floating">Carrera</ion-label>
+      <ion-input formControlName="carrera" type="text" required></ion-input>
+    </ion-item>
+    <ion-item class="texto" lines="full">
+      <ion-label position="floating">Telefono</ion-label>
+      <ion-input formControlName="telefono" type="text" required></ion-input>
+    </ion-item>
+    
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="success" expand="block">Enviar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+  
+</ion-content>
+
+
+

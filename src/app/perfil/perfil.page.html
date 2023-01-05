@@ -1,0 +1,83 @@
+<ion-header>
+
+  <ion-toolbar color="warning">
+
+    <ion-title> Perfil</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>  
+    </ion-buttons> 
+      <ion-buttons slot="end">
+        <ion-menu-button autoHide="false"></ion-menu-button>
+      </ion-buttons>
+  </ion-toolbar>
+
+
+</ion-header>
+<!-- -----------<button  style="align-items: center;" (click)="tomarf()">cambiar foto</button>---------------------------------------------------- -->
+<ion-content class="fondo">
+
+
+  <img _ngcontent-xjc-c149="" _ngcontent-pvi-c149="" alt="Sin Foto" height="100" width="100" [src]="foto" style="align-items: center;margin-left: 95px;margin-top: 10px;">
+  <br>
+  <button _ngcontent-hah-c144="" _ngcontent-rfm-c144="" _ngcontent-nsj-c149="" style="color: orange;margin-left: 95px;margin-top: 20px;" (click)="tomarf()">Tomar foto</button>
+
+
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-textarea placeholder="nombre: Pabloncita Perez " disabled></ion-textarea>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-textarea placeholder="contraseña: *** " enable></ion-textarea>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-textarea placeholder="correo: pa.perez@duocuc.cl " disabled></ion-textarea>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-textarea placeholder="carrera: AUDITORIA" disabled></ion-textarea>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-textarea placeholder="telefono: 95059**** " enable></ion-textarea>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
