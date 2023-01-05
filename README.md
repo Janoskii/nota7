@@ -1,2 +1,2 @@
-# nota7
-Proyecto Ionic + Angular de Laboratorio.
+# NotaSiete
+ Crear aplicacion con sistema de asistencia.
