@@ -21,7 +21,7 @@ export class PerfilPage implements OnInit{
   ngOnInit(){
     this.serv.devol().subscribe(res=>{
       this.foto = res;
-    })
+    });
   }
 
 }

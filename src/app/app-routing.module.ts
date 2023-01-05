@@ -42,10 +42,6 @@ const routes: Routes = [
     loadChildren: () => import('./registrar/registrar.module').then( m => m.RegistrarPageModule)
   },
   {
-    path: 'menuu',
-    loadChildren: () => import('./menuu/menuu.module').then( m => m.MenuuPageModule)
-  },
-  {
     path: 'olvidecontra',
     loadChildren: () => import('./olvidecontra/olvidecontra.module').then( m => m.OlvidecontraPageModule)
   },
@@ -56,7 +52,11 @@ const routes: Routes = [
   {
     path: 'scanner',
     loadChildren: () => import('./scanner/scanner.module').then( m => m.ScannerPageModule)
+  },  {
+    path: 'horario',
+    loadChildren: () => import('./horario/horario.module').then( m => m.HorarioPageModule)
   },
+
 
 ];
 

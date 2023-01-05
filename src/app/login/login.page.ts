@@ -32,7 +32,7 @@ export class LoginPage implements OnInit {
     }
 
     const navigationextras: NavigationExtras = {
-      state: { user: this.user } 
+      state: { user: this.user }
     };
 
     this.presentToast('Nos Alegra de Verte ' + this.user);

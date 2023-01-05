@@ -20,14 +20,14 @@ export class HomePage {
   ngOnInit() {
     const animation: Animation = this.animationCtrl.create()
       .addElement(document.querySelector('.button'))
-      .duration(2000)
+      .duration(3500)
       .iterations(Infinity)
-      .fromTo('opacity', '1', '0.2')
+      .fromTo('opacity', '1', '0.2');
 
     const movName: Animation = this.animationCtrl.create()
       .addElement(document.querySelector('#nombreUsuario'))
-      .duration(2000)
-      .iterations(Infinity)
+      .duration(3800)
+      .iterations(5)
       .from('transform', 'translateX(100%)')
 
     animation.play();

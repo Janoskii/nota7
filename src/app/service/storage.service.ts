@@ -42,7 +42,7 @@ export class StorageService {
 
   creartest(){
     this.platform.ready().then(() => {
-      this.usersdb.unshift({strUser:'Janoski',strPass:'12345678'});
+      this.usersdb.unshift({strUser:'Janoski',strPass:'123'});
       this._storage.set('usersdb',this.usersdb);
     });
   }

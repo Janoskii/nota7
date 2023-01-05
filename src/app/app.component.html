@@ -1,7 +1,7 @@
 <ion-app>
-<ion-router-outlet color="orange">
+<ion-router-outlet >
 
-    <ion-menu side="end" type="push" contentId="main" style="color:rgb(177, 104, 2)">
+    <ion-menu side="end" type="push" contentId="main" style="color: orange">
       <ion-header >
         <ion-toolbar color="white">
           <ion-title>MENÚ</ion-title>
@@ -9,33 +9,35 @@
       </ion-header>
       <ion-content>
         
-        <ion-menu-toggle color="warning">
-          <ion-toolbar color="warning">
+        <ion-menu-toggle style="color: aqua;">
+          <ion-toolbar style="color: orange;">
             <ion-buttons slot="start">
               <ion-back-button defaultHref="home"></ion-back-button>
             </ion-buttons>
           </ion-toolbar>
-        <ion-list style="color: rgb(18, 176, 0)">
-          <ion-item [routerLink]="'/horario'" style="color: rgb(89, 58, 0)" color="black">
+        <ion-list style="color: rgb(87, 49, 0, 0.925)">
+          <ion-item [routerLink]="'/horario'" style="color: orange" color="black">
             <ion-icon name="calendar"></ion-icon> Horario            
           </ion-item>
-          <ion-item [routerLink]="'/edi-horario'"style="color: rgb(89, 58, 0)" color="black">
+          <ion-item [routerLink]="'/edi-horario'"style="color: orange" color="black">
             <ion-icon name="scan-circle-outline"></ion-icon>Ramos</ion-item>
-          <ion-item [routerLink]="'/asistencia'"style="color: rgb(89, 58, 0)" color="black">
+          <ion-item [routerLink]="'/asistencia'"style="color: orange" color="black">
             <ion-icon name="clipboard"></ion-icon>Asistencia</ion-item>
-          <ion-item [routerLink]="'/perfil'"style="color: rgb(89, 58, 0)" color="black">
+          <ion-item [routerLink]="'/perfil'"style="color: orange" color="black">
             <ion-icon name="happy"></ion-icon> Perfil</ion-item>
 
-          <ion-item [routerLink]="'/scanner'"style="color: rgb(89, 58, 0)" color="black">
+          <ion-item [routerLink]="'/scanner'"style="color: orange" color="black">
             <ion-icon name="camera"></ion-icon>Scanner            
           </ion-item>
           
-          <ion-item [routerLink]="'/gen-qr'"style="color: rgb(89, 58, 0)" color="black">
+          <ion-item [routerLink]="'/gen-qr'"style="color: orange" color="black">
             <ion-icon name="scan-circle-outline"></ion-icon>GenerarQr</ion-item>
         </ion-list>
       </ion-menu-toggle>
-      
 
+      <ion-button defaultHref="'/login'" [routerLink]="'/login'"><img src="assets\ADOS-re.png"  alt=" "></ion-button>
+      
+      
       </ion-content>
     </ion-menu>
     
