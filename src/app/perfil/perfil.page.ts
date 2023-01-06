@@ -10,6 +10,7 @@ import { CameraService } from '../service/camera.service';
 export class PerfilPage implements OnInit{
   foto:any;
 
+
   constructor( private serv: CameraService ) { }
 
 
