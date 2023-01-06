@@ -18,3 +18,10 @@ ion-button {
     --padding-top: 118px;
     --padding-bottom: 100px;
   }
+
+  ion-router-outlet{
+    --background: #ffffff00;
+    --background-hover: #000000;
+    --background-activated: #171c1a;
+    --background-focused: #006e37;
+  }

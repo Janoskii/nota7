@@ -9,7 +9,7 @@ import { AlertController } from '@ionic/angular';
 export class GenQRPage implements OnDestroy {
 
   //www.npmjs.com/package/angularx-qrcode
-  qrCodeString = 'www.ingresoasistencia.cl/app-moviles'; 
+  qrCodeString = 'https://www.twitch.tv/janosskiill'; 
   scannedResult: any;
   content_visibility = '';
  

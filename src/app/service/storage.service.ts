@@ -25,6 +25,7 @@ export class StorageService {
     this._storage = storage;
     this.creartest();
     this.creartest2();
+    this.creartest3();
   }
 
 
@@ -50,6 +51,13 @@ export class StorageService {
   creartest2(){
     this.platform.ready().then(() => {
       this.usersdb.unshift({strUser:'j.baez5',strPass:'B.34vf5'});
+      this._storage.set('usersdb',this.usersdb);
+    });
+  }
+
+  creartest3(){
+    this.platform.ready().then(() => {
+      this.usersdb.unshift({strUser:'Joan',strPass:'1234'});
       this._storage.set('usersdb',this.usersdb);
     });
   }
