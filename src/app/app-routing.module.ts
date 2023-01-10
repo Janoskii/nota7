@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'vistas',
     pathMatch: 'full'
   },
   {
@@ -52,9 +52,14 @@ const routes: Routes = [
   {
     path: 'scanner',
     loadChildren: () => import('./scanner/scanner.module').then( m => m.ScannerPageModule)
-  },  {
+  },
+  {
     path: 'horario',
     loadChildren: () => import('./horario/horario.module').then( m => m.HorarioPageModule)
+  },
+  {
+    path: 'vistas',
+    loadChildren: () => import('./vistas/vistas.module').then( m => m.VistasPageModule)
   },
 
 

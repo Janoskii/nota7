@@ -1,133 +1,153 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Horario</ion-title>
+  <ion-toolbar color="warning">
+
+    <ion-title> HORARIO</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>  
+    </ion-buttons> 
+      <ion-buttons slot="end">
+        <ion-menu-button autoHide="false"></ion-menu-button>
+      </ion-buttons>
   </ion-toolbar>
+
+
+
 </ion-header>
+        
 
+      
+<ion-content class="fondo">
+  <ion-card>
+    <ion-card-title style="text-align: center;"><h2> HORARIO Y ASISTENCIA</h2></ion-card-title>
 
+  <ion-accordion-group possition="start">
+    <ion-accordion value="primero">
+      <ion-item slot="header" color="light">
+        <ion-label>Lunes</ion-label>
+      </ion-item>
+            <!--Aqui comienza la card-->  
+      <div class="ion-padding" slot="content">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title><h2> Comunicación Oral</h2></ion-card-title>
+            <ion-card-subtitle>19:00 - 20:31</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-badge class="ionbadge" color="danger">10%</ion-badge>
+          </ion-card-content>
+        </ion-card>
+        
+      </div>
+              <!--Aqui termina la card-->  
+      
+    </ion-accordion>
+    <ion-accordion value="segundo">
+      <ion-item slot="header" color="light">
+        <ion-label>Martes</ion-label>
+      </ion-item>
+            <!--Aqui comienza la card-->  
+            <div class="ion-padding" slot="content">
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-title><h2> Comunicación Oral</h2></ion-card-title>
+                  <ion-card-subtitle>19:00 - 20:31</ion-card-subtitle>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  <ion-badge class="ionbadge" color="danger">10%</ion-badge>
+                </ion-card-content>
+              </ion-card>
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-title><h2> Big data</h2></ion-card-title>
+                  <ion-card-subtitle>20:41 - 22:45</ion-card-subtitle>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  <ion-badge class="ionbadge" color="primary">100%</ion-badge>
+                </ion-card-content>
+              </ion-card>
+            </div>
+                    <!--Aqui termina la card-->  
+    </ion-accordion>
+    <ion-accordion value="tercero">
+      <ion-item slot="header" color="light">
+        <ion-label>Miercoles</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title><H2> Programacion de bases de datos</H2></ion-card-title>
+            <ion-card-subtitle>19:00 - 20:30</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-badge>80%</ion-badge>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title><h2> Consulta base de datos</h2></ion-card-title>
+            <ion-card-subtitle>20:40 - 22:30</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-badge>100%</ion-badge>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-accordion>
+    <ion-accordion value="cuarto">
+      <ion-item slot="header" color="light">
+        <ion-label>Jueves</ion-label>
+      </ion-item>
+                    <!--Aqui comienza la card-->  
+                    <div class="ion-padding" slot="content">
+                      <ion-card>
+                        <ion-card-header>
+                          <ion-card-title><h2> Antropologia</h2></ion-card-title>
+                          <ion-card-subtitle>19:00 - 20:31</ion-card-subtitle>
+                        </ion-card-header>
+                      
+                        <ion-card-content>
+                          <ion-badge class="ionbadge" color="danger">30%</ion-badge>
+                        </ion-card-content>
+                      </ion-card>
+                    </div>
+                            <!--Aqui termina la card-->  
+    </ion-accordion>
+    <ion-accordion  value="quinto">
+      <ion-item slot="header" color="light">
+        <ion-label >Viernes</ion-label>
+      </ion-item>
+      <!--Aqui comienza la card-->  
+      <div class="ion-padding" slot="content">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title><h2> Descanso</h2></ion-card-title>
+            <ion-card-subtitle></ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-badge class="ionbadge" color="danger"></ion-badge>
+          </ion-card-content>
+        </ion-card>
+      </div>
+              <!--Aqui termina la card-->  
+    </ion-accordion>
+    <ion-accordion  [disabled]="true" value="sexto">
+      <ion-item slot="header" color="light">
+        <ion-label >Sabado</ion-label>
+      </ion-item>
+    </ion-accordion>
+    <ion-accordion  [disabled]="true" value="septimo">
+      <ion-item slot="header" color="light">
+        <ion-label >Domingo</ion-label>
+      </ion-item>
 
-
-
-<ion-content class="ion-padding">
-<ion-card>
-
-  <ion-card-title style="text-align: center;">HORARIO</ion-card-title>
-
-
-<ion-card-subtitle>Revisa tu Horario Aqui!</ion-card-subtitle>
-  <ion-grid>
-    <ion-row>
-      <!-- -----------DIVISION--------------------------------------------------- -->
-      <ion-col >
-
-  <ion-button expand="block" (click)="setOpen(true)">JUEVES</ion-button>
-  <ion-modal [isOpen]="isModalOpen">
-    <ng-template>
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>Modal</ion-title>
-          <ion-buttons slot="end">
-            <ion-button (click)="setOpen(false)">Close</ion-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content class="ion-padding">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-          reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
-          dicta.
-        </p>
-      </ion-content>
-    </ng-template>
-  </ion-modal>
-      </ion-col>
-      <!-- -----------DIVISION--------------------------------------------------- -->
-      <ion-col >  <ion-button expand="block" (click)="setOpen(true)">VIERNES</ion-button>
-        <ion-modal [isOpen]="isModalOpen">
-          <ng-template>
-            <ion-header>
-              <ion-toolbar>
-                <ion-title>Modal</ion-title>
-                <ion-buttons slot="end">
-                  <ion-button (click)="setOpen(false)">Close</ion-button>
-                </ion-buttons>
-              </ion-toolbar>
-            </ion-header>
-            <ion-content class="ion-padding">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-                reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
-                dicta.
-              </p>
-            </ion-content>
-          </ng-template>
-        </ion-modal></ion-col>
-      <!-- -----------DIVISION--------------------------------------------------- -->
-      <ion-col >  <ion-button expand="block" (click)="setOpen(true)">MARTES</ion-button>
-        <ion-modal [isOpen]="isModalOpen">
-          <ng-template>
-            <ion-header>
-              <ion-toolbar>
-                <ion-title>Modal</ion-title>
-                <ion-buttons slot="end">
-                  <ion-button (click)="setOpen(false)">Close</ion-button>
-                </ion-buttons>
-              </ion-toolbar>
-            </ion-header>
-            <ion-content class="ion-padding">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-                reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
-                dicta.
-              </p>
-            </ion-content>
-          </ng-template>
-        </ion-modal></ion-col>
-      <!-- -----------DIVISION--------------------------------------------------- -->
-      <ion-col>  <ion-button expand="block" (click)="setOpen(true)">MIERCOLES</ion-button>
-        <ion-modal [isOpen]="isModalOpen">
-          <ng-template>
-            <ion-header>
-              <ion-toolbar>
-                <ion-title>Modal</ion-title>
-                <ion-buttons slot="end">
-                  <ion-button (click)="setOpen(false)">Close</ion-button>
-                </ion-buttons>
-              </ion-toolbar>
-            </ion-header>
-            <ion-content class="ion-padding">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-                reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
-                dicta.
-              </p>
-            </ion-content>
-          </ng-template>
-        </ion-modal></ion-col>
-      <!-- -----------DIVISION--------------------------------------------------- -->
-      <ion-col>  <ion-button expand="block" (click)="setOpen(true)">LUNES</ion-button>
-        <ion-modal [isOpen]="isModalOpen">
-          <ng-template>
-            <ion-header>
-              <ion-toolbar>
-                <ion-title>Modal</ion-title>
-                <ion-buttons slot="end">
-                  <ion-button (click)="setOpen(false)">Close</ion-button>
-                </ion-buttons>
-              </ion-toolbar>
-            </ion-header>
-            <ion-content class="ion-padding">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-                reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
-                dicta.
-              </p>
-            </ion-content>
-          </ng-template>
-        </ion-modal></ion-col>
-      <!-- -----------DIVISION--------------------------------------------------- -->
-    </ion-row>
-  </ion-grid>
-      <!-- -----------CAAAAAAAAAAAAAAAAARD--------------------------------------------------- -->
+    </ion-accordion>
+  </ion-accordion-group>
 </ion-card>
 </ion-content>
